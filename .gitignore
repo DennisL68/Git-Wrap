@@ -24,6 +24,9 @@
 !*.txt
 !*.csv
 
+# Allow Windows reg files
+!*.reg
+
 # Allow Office files
 # !*.docx
 # !*.dotx

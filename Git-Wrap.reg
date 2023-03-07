@@ -1,0 +1,98 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\GitWrap]
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\GitWrap"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Git Wrap"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap]
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell]
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\00_Init]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Initialize Git folder structure here [Git Init]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\00_Init\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git init 2>&1; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\01_Clone]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Copy Remote Repo here [Git Clone]"
+"CommandFlags"=dword:00000040
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\01_Clone\command]
+@="pwsh.exe -WindowStyle normal -Command $Repo = Read-Host 'Enter remote URI'; $Result = git clone $Repo 2>&1; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\10_Add]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Start tracking all new changes [Git Add]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\10_Add\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git add . 2>&1; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\12_Sync]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Sync with Remote Repo [Git Pull/Push]"
+"CommandFlags"=dword:00000040
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\12_Sync\command]
+@="pwsh.exe -WindowStyle hidden -Command git pull; $Result = git push 2>&1; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\13_Log]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="View revision log messages [Git Log]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\13_Log\command]
+@="pwsh.exe -WindowStyle normal -NoExit -Command git log --oneline 2>&1"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit]
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell]
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\11_Commit]
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\GitWrap\\GitWrapSub_Commit"
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Create revision with log message [Conventional Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Add feat message [Git Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git status; if ($Result[1] -eq 'Changes to be committed:') {git commit -m'feat(ref): '; $Result = git commit --amend 2>&1}; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Add fix message [Git Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git status; if ($Result[1] -eq 'Changes to be committed:') {git commit -m'fix(ref): '; $Result = git commit --amend 2>&1}; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Add docs message [Git Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git status; if ($Result[1] -eq 'Changes to be committed:') {git commit -m'docs(ref): '; $Result = git commit --amend 2>&1}; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Add refact message [Git Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git status; if ($Result[1] -eq 'Changes to be committed:') {git commit -m'refact(ref): '; $Result = git commit --amend 2>&1}; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Add chore message [Git Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git status; if ($Result[1] -eq 'Changes to be committed:') {git commit -m'chore(ref): '; $Result = git commit --amend 2>&1}; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Add test message [Git Commit]"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test\command]
+@="pwsh.exe -WindowStyle hidden -Command $Result = git status; if ($Result[1] -eq 'Changes to be committed:') {git commit -m'test(ref): '; $Result = git commit --amend 2>&1}; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
