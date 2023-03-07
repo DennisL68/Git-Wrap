@@ -21,7 +21,7 @@ The following provides great enancements to this solution
 
 ## 3. How do I use this repo?
 
-Apply the reg files and you are done.
+Apply the reg files as an admin and you are done.
 
 ## 4. References and links
 
