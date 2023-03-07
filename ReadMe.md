@@ -1,6 +1,6 @@
 # Git-Wrap
 
-## 1. Desription
+## 1. Description
 
 Git-Wrap is a very simple GUI-wrapper that integrates with Windows Explorer for Git for Windows.
 
