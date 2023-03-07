@@ -25,10 +25,10 @@ Apply the reg files and you are done.
 
 ## 4. References and links
 
-* [Git for Windows](1)
-* [PowerShell 7.2 (LTS)](2)
-* [TortoiseGit](3)
-* [Creating Shortcut Menu Handlers](4)
+* [Git for Windows][1]
+* [PowerShell 7.2 (LTS)][2]
+* [TortoiseGit][3]
+* [Creating Shortcut Menu Handlers][4]
 
 ## 5. Contacts
 
