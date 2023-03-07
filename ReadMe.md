@@ -1,15 +1,3 @@
----
-Title: README
-Description: ""
-IssuedBy: ""
-Date: 2022-11-07T11:45:16.278Z
-Tags: ""
-Categories: []
-Type: default
-ClassificationLevel: Confidential
-SubjectArea: ReadMe
----
-
 # Git-Wrap
 
 ## 1. Desription
