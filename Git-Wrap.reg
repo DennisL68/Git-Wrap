@@ -186,21 +186,10 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\13_Log\command]
 ; $cmd = @'
-; Add-Type -AssemblyName PresentationFramework
-
-; try {
-;     [string[]]$Result = git log --oneline 2>&1
-;     if ($Result.Exception) {throw -ErrorAction Stop}
-
-; } catch {
-;     [System.Windows.MessageBox]::Show($Result[0],'Git for Windows',0,'Error')
-;     return
-; }
-
-; [System.Windows.MessageBox]::Show($Result[0],'Git for Windows',0,'Info')
+; git log --oneline
 ; '@
 ; [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($cmd))
-@="pwsh.exe -WindowStyle normal -NoExit -EncodedCommand QQBkAGQALQBUAHkAcABlACAALQBBAHMAcwBlAG0AYgBsAHkATgBhAG0AZQAgAFAAcgBlAHMAZQBuAHQAYQB0AGkAbwBuAEYAcgBhAG0AZQB3AG8AcgBrAAoACgB0AHIAeQAgAHsACgAgACAAIAAgAFsAcwB0AHIAaQBuAGcAWwBdAF0AJABSAGUAcwB1AGwAdAAgAD0AIABnAGkAdAAgAGwAbwBnACAALQAtAG8AbgBlAGwAaQBuAGUAIAAyAD4AJgAxAAoAIAAgACAAIABpAGYAIAAoACQAUgBlAHMAdQBsAHQALgBFAHgAYwBlAHAAdABpAG8AbgApACAAewB0AGgAcgBvAHcAIAAtAEUAcgByAG8AcgBBAGMAdABpAG8AbgAgAFMAdABvAHAAfQAKAAoAfQAgAGMAYQB0AGMAaAAgAHsACgAgACAAIAAgAFsAUwB5AHMAdABlAG0ALgBXAGkAbgBkAG8AdwBzAC4ATQBlAHMAcwBhAGcAZQBCAG8AeABdADoAOgBTAGgAbwB3ACgAJABSAGUAcwB1AGwAdABbADAAXQAsACcARwBpAHQAIABmAG8AcgAgAFcAaQBuAGQAbwB3AHMAJwAsADAALAAnAEUAcgByAG8AcgAnACkACgAgACAAIAAgAHIAZQB0AHUAcgBuAAoAfQAKAAoAWwBTAHkAcwB0AGUAbQAuAFcAaQBuAGQAbwB3AHMALgBNAGUAcwBzAGEAZwBlAEIAbwB4AF0AOgA6AFMAaABvAHcAKAAkAFIAZQBzAHUAbAB0AFsAMABdACwAJwBHAGkAdAAgAGYAbwByACAAVwBpAG4AZABvAHcAcwAnACwAMAAsACcASQBuAGYAbwAnACkA"
+@="pwsh.exe -WindowStyle normal -NoExit -EncodedCommand ZwBpAHQAIABsAG8AZwAgAC0ALQBvAG4AZQBsAGkAbgBlAA=="
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit]
 
