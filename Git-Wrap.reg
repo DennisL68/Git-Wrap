@@ -213,7 +213,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="feat [Conventional Commit]"
+"MUIVerb"="feat [Conv Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature\command]
 ; $cmd = @'
@@ -248,7 +248,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="fix [Conventional Commit]"
+"MUIVerb"="fix [Conv Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix\command]
 ; $cmd = @'
@@ -283,7 +283,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="docs [Conventional Commit]"
+"MUIVerb"="docs [Conv Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs\command]
 ; $cmd = @'
@@ -318,7 +318,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="refact [Conventional Commit]"
+"MUIVerb"="refact [Conv Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor\command]
 ; $cmd = @'
@@ -353,7 +353,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="chore [Conventional Commit]"
+"MUIVerb"="chore [Conv Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore\command]
 ; $cmd = @'
@@ -388,7 +388,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="test [Conventional Commit]"
+"MUIVerb"="test [Conv Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test\command]
 ; $cmd = @'
