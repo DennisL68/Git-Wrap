@@ -14,6 +14,7 @@
 "MUIVerb"="Initialize folder [Git Init]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\00_Init\command]
+
 @="pwsh.exe -WindowStyle hidden -Command $Result = git init 2>&1; [System.Windows.MessageBox]::Show($Result,'Git for Windows',0,'Info')"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\01_Clone]
@@ -60,7 +61,7 @@
 "MUIVerb"="feat message [Git Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature\command]
-$cmd = @'
+; $cmd = @'
 ; Add-Type -AssemblyName PresentationFramework
  
 ; try {
@@ -95,7 +96,7 @@ $cmd = @'
 "MUIVerb"="fix message [Git Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix\command]
-$cmd = @'
+; $cmd = @'
 ; Add-Type -AssemblyName PresentationFramework
  
 ; try {
@@ -130,7 +131,7 @@ $cmd = @'
 "MUIVerb"="docs message [Git Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs\command]
-$cmd = @'
+; $cmd = @'
 ; Add-Type -AssemblyName PresentationFramework
  
 ; try {
@@ -165,7 +166,7 @@ $cmd = @'
 "MUIVerb"="refact message [Git Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor\command]
-$cmd = @'
+; $cmd = @'
 ; Add-Type -AssemblyName PresentationFramework
  
 ; try {
@@ -200,7 +201,7 @@ $cmd = @'
 "MUIVerb"="chore message [Git Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore\command]
-$cmd = @'
+; $cmd = @'
 ; Add-Type -AssemblyName PresentationFramework
  
 ; try {
