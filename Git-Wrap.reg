@@ -209,11 +209,11 @@
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\shell\11_Commit]
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\GitWrap\\GitWrapSub_Commit"
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Create revision [Conventional Commit]"
+"MUIVerb"="Create revision [Git Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="feat message [Git Commit]"
+"MUIVerb"="feat [Conventional Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature\command]
 ; $cmd = @'
@@ -248,7 +248,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="fix message [Git Commit]"
+"MUIVerb"="fix [Conventional Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix\command]
 ; $cmd = @'
@@ -283,7 +283,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="docs message [Git Commit]"
+"MUIVerb"="docs [Conventional Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs\command]
 ; $cmd = @'
@@ -318,7 +318,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="refact message [Git Commit]"
+"MUIVerb"="refact [Conventional Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor\command]
 ; $cmd = @'
@@ -353,7 +353,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="chore message [Git Commit]"
+"MUIVerb"="chore [Conventional Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore\command]
 ; $cmd = @'
@@ -388,7 +388,7 @@
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="test message [Git Commit]"
+"MUIVerb"="test [Conventional Commit]"
 
 [HKEY_CLASSES_ROOT\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test\command]
 ; $cmd = @'
