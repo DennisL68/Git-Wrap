@@ -1,12 +1,12 @@
-# Git-Wrap
+# GitWrap
 
 ## 1. Description
 
-Git-Wrap is a very simple GUI-wrapper that integrates with Windows Explorer for Git for Windows.
+GitWrap is a very simple GUI-wrapper that integrates with Windows Explorer for Git for Windows.
 
 The purpose is to take the edge off the steep initial learning curve for people that are used to graphical interfaces when working with files.
 
-Git-Wrap will add a few context menus that allows the user to right-click in the Explorer to perform the most common Git tasks.
+GitWrap will add a few context menus that allows the user to right-click in the Explorer to perform the most common Git tasks.
 
 ## 2. Requirements
 
