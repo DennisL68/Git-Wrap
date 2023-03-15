@@ -7,14 +7,16 @@ The integration is done all in user mode context and requires no admin privilege
 
 The purpose is to take the edge off the steep initial learning curve for people that are used to graphical interfaces when working with files.
 
-GitWrap will add a few context menus that allows the user to right-click in the Explorer to perform the most common Git tasks.
+GitWrap will add a few context menus that allows the user to right-click in the Explorer to perform the most common Git tasks.  
+It will also add the current Git status to the top most File Explorer window.
 
 ## 2. Requirements
 
-The prerequisites for applying this repo is
+The prerequisites for applying all features of this repo is
 
 * PowerShell 7.2.x
 * Git for Windows
+* posh-git
 
 The following provides some enancements to this solution
 
