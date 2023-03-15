@@ -2,7 +2,8 @@
 
 ## 1. Description
 
-GitWrap is a very simple GUI-wrapper that integrates with Windows Explorer for Git for Windows.
+GitWrap is a very simple GUI-wrapper that integrates with Windows Explorer for `Git for Windows`.  
+The integration is done all in user mode context and requires no admin privileges.
 
 The purpose is to take the edge off the steep initial learning curve for people that are used to graphical interfaces when working with files.
 
@@ -15,13 +16,13 @@ The prerequisites for applying this repo is
 * PowerShell 7.2.x
 * Git for Windows
 
-The following provides great enancements to this solution
+The following provides some enancements to this solution
 
 * TortioseGit
 
 ## 3. How do I use this repo?
 
-Apply the reg files as an admin and you are done.
+Apply the reg files and you are done.
 
 ## 4. References and links
 
