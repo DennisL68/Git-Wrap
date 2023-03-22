@@ -1,0 +1,25 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\10_Feature]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="feat [Conv Commit]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\11_Fix]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="fix [Conv Commit]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\12_Docs]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="docs [Conv Commit]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\13_Refactor]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="refact [Conv Commit]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Choir]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="chore [Conv Commit]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\15_Test]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="test [Conv Commit]"
