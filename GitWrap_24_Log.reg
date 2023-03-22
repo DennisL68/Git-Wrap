@@ -1,0 +1,8 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\24_Log\command]
+; $cmd = @'
+; git log --oneline
+; '@
+; [System.Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($cmd))
+@="pwsh.exe -WindowStyle normal -NoExit -EncodedCommand ZwBpAHQAIABsAG8AZwAgAC0ALQBvAG4AZQBsAGkAbgBlAA=="

@@ -1,0 +1,18 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\10_Create]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Create [Checkout -b]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\11_Switch]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Switch [Branch switch]"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\12_LocalDel]
+"Icon"="C:\\Program Files\\Git\\git-bash.exe"
+"MUIVerb"="Delete Local [Branch -d]"
+
+; Windows only support 16 static context menus, so one has to go...
+; [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\13_RemoteDel]
+; "Icon"="C:\\Program Files\\Git\\git-bash.exe"
+; "MUIVerb"="Delete Remote [Push ]"
