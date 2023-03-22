@@ -25,7 +25,7 @@ The following provides some enancements to this solution
 ## 3. Limitations
 
 Windows File Explorer only support 16 static context menu per entry.
-Yo pass by this limitations, some of the code in [Adam the Automator - How to Build a PowerShell Form Menu for your PowerShell Scripts][5] will be tried out in a future version.
+To pass by this limitations, some of the code in [Adam the Automator - How to Build a PowerShell Form Menu for your PowerShell Scripts][5] will be tried out in a future version.
 
 ## 4. How do I use this repo?
 
