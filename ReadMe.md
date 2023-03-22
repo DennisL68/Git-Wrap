@@ -22,18 +22,23 @@ The following provides some enancements to this solution
 
 * TortioseGit
 
-## 3. How do I use this repo?
+## 3. Limitations
+
+Windows File Explorer only support 16 static context menu per entry.
+Yo pass by this limitations, some of the code in [Adam the Automator - How to Build a PowerShell Form Menu for your PowerShell Scripts][5] will be tried out in a future version.
+
+## 4. How do I use this repo?
 
 Apply the reg files and you are done.
 
-## 4. References and links
+## 5. References and links
 
 * [Git for Windows][1]
 * [PowerShell 7.2 (LTS)][2]
 * [TortoiseGit][3]
 * [Creating Shortcut Menu Handlers][4]
 
-## 5. Contacts
+## 6. Contacts
 
 Please contact the author for any questions or if you'd like to help out.
 
@@ -41,3 +46,4 @@ Please contact the author for any questions or if you'd like to help out.
 [2]:https://learn.microsoft.com/en-us/powershell/scripting/whats-new/what-s-new-in-powershell-72?view=powershell-7.2
 [3]:https://tortoisegit.org/download/
 [4]:https://learn.microsoft.com/en-us/windows/win32/shell/context-menu-handlers
+[5]:https://adamtheautomator.com/powershell-form/
