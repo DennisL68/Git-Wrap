@@ -1,6 +1,6 @@
 ﻿Windows Registry Editor Version 5.00
 
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\13_Status\command]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\23_Status\command]
 ; $cmd = @'
 ; # Update File Explorer
 ; $ThisGitStatus = Write-VcsStatus

@@ -1,0 +1,5 @@
+﻿Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\10_Create\command]
+;
+@="pwsh.exe -WindowStyle hidden -EncodedCommand"
