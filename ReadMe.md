@@ -31,6 +31,15 @@ To pass by this limitations, some of the code in [Adam the Automator - How to Bu
 
 Apply the reg files and you are done.
 
+To change the code, uncomment the PowerShell scripts within the reg files.
+Apply your changes and test by hand (no unit tests available yet).
+
+To "complie" the script into a registry command @, run all the code, making the last row convert the here 
+string to Base64, and paste the resulting string to the reg command @ after `Encoding`. 
+Remember to keep the registry command as a string.
+
+Before applying any changes, make sure to delete the old application in key `HKCU\SOFTWARE\Classes\Directory\ContextMenus\GitWrap`.
+
 ## 5. References and links
 
 * [Git for Windows][1]
