@@ -16,7 +16,7 @@
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
 "MUIVerb"="refact [Conv Commit]"
 
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Choir]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Commit\shell\14_Chore]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
 "MUIVerb"="chore [Conv Commit]"
 
