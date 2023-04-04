@@ -51,7 +51,7 @@ try {
     if (
         !$CommitType -or
         ($CommitType | Select -ExpandProperty Type) -eq ''
-    ) {throw -ErrorAction stop}
+    ) {throw}
 
     $ConventionalCommit = $CommitType.Type + '(ref):'
 } catch {
@@ -63,23 +63,23 @@ try {
  
 try {
     [string[]]$Result = git status 2>&1
-    if ($Result.Exception) {throw -ErrorAction Stop}
+    if ($Result.Exception) {throw}
 
     [string[]]$Result = git add . 2>&1
-    if ($Result.Exception) {throw -ErrorAction Stop}
+    if ($Result.Exception) {throw}
 
     [string[]]$Result = git commit -m"$ConventionalCommit" 2>&1
-    if ($Result.Exception) {throw -ErrorAction Stop}
-    if (($Result | Select -Index 1) -like 'nothing to commit*') {
-        $Result[0] = $Result[1]
-        throw -ErrorAction Stop
+    if ($Result.Exception) {throw}
+    if (($Result | Select -Last 1) -like 'nothing to commit*') {
+        $Result[0] = $Result[-1]
+        throw
     }
 
     [string[]]$Result = git commit --amend 2>&1
     if (
         $Result.Exception -and
         $Result[0].Exception -notlike "*unix2dos*"
-    ) {throw -ErrorAction Stop}
+    ) {throw}
 
 } catch {
     [System.Windows.MessageBox]::Show(
@@ -90,7 +90,7 @@ try {
 
 # Update File Explorer
 $ThisGitStatus = Write-VcsStatus
-$ThisGitStatus = $ThisGitStatus | ForEach-Object { $_ -replace '\x1b\[[0-9;]*m','' }
+$ThisGitStatus = $ThisGitStatus | ForEach-Object { $_ -replace '\x1b\[[0-9;]*m','' } #clean out ANSI
 $ThisGitStatus = $CheckMark + ' ' + (Get-GitStatus).RepoName + ' ' + $ThisGitStatus
 
 Add-Type -Namespace Util -Name WinApi  -MemberDefinition @"
