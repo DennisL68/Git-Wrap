@@ -7,7 +7,7 @@
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\00_Init]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Initialize folder [Git Init]"
+"MUIVerb"="Initialize File Set [Git Init]"
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\01_Clone]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
@@ -30,7 +30,7 @@
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\23_Status]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Refresh Status [Git Status]"
+"MUIVerb"="Refresh Explorer [Git Status]"
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\24_Log]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
