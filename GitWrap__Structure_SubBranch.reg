@@ -18,6 +18,6 @@
 ; "Icon"="C:\\Program Files\\Git\\git-bash.exe"
 ; "MUIVerb"="Delete Remote [Push ]"
 
-[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\14_RemoteUpdate]
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\GitWrapSub_Branch\shell\14_RefreshRemote]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Remote Update [Update --prune]"
+"MUIVerb"="Refresh Remote [Update --prune]"
