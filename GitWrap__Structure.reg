@@ -3,7 +3,7 @@
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\GitWrap]
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\GitWrap"
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Git Wrap r0.14"
+"MUIVerb"="Git Wrap r0.15"
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\00_Init]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
