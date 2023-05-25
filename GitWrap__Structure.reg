@@ -3,11 +3,11 @@
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\Background\shell\GitWrap]
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\GitWrap"
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Git Wrap r0.16"
+"MUIVerb"="Git Wrap r0.17"
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\00_Init]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
-"MUIVerb"="Initialize File Set [Git Init]"
+"MUIVerb"="Initialize Fileset [Git Init]"
 
 [HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\ContextMenus\GitWrap\shell\01_Clone]
 "Icon"="C:\\Program Files\\Git\\git-bash.exe"
